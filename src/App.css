@@ -1,0 +1,77 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: black;
+}
+#display{
+  background-image: url('background.jpg');
+  background-size:cover;
+  position: relative;
+  top:80px;
+  height: 800px;
+  background-position: center;
+}
+p{
+  color: white;
+  margin: 10px;
+  background-color: black;
+}
+#visible{
+  display: none;
+}
+#content{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width:500px) {
+
+}
+#skill{
+  width: 0px;
+  animation: move 2s  ease-out;
+}
+@keyframes move {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:230px;
+  }
+}
+
+#skills{
+  width: 0px;
+  animation: move1 2s 1 ease-out;
+}
+@keyframes move1 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:200px;
+  }
+}
+#open{
+  position: relative;
+  right: 500px;
+  animation: welcome 1s 0.7s 1 forwards;
+}
+@keyframes welcome {
+  0%{
+    right: 500px;
+  }
+  100%{
+    right: 0px;
+  }
+  
+}
+#begin{
+  background-color: transparent;
+  color: white;
+}
+#begin:hover{
+  background-color: white;
+  color: black;
+}
